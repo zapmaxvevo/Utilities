@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cmake -B build -DCMAKE_BUILD_TYPE=Debug)",
+      "Bash(apt list:*)",
+      "Bash(dpkg -l cmake*)",
+      "Read(//usr/bin/**)",
+      "Read(//usr/lib/x86_64-linux-gnu/**)",
+      "Bash(pkg-config --exists wx_gtk3u_core-3.2)",
+      "Bash(pkg-config --exists wx_gtk3u_core-3.0)",
+      "Bash(cmake .. -DBUILD_TESTS=ON)",
+      "Bash(./ffmpeg-tests -v 2>&1)",
+      "Bash(./ffmpeg-tests 2>&1)"
+    ]
+  }
+}
